@@ -1,0 +1,259 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;0,800;1,300&family=Roboto:ital,wght@0,100;0,300;1,100&family=Rubik:ital,wght@1,300&family=Ubuntu:ital,wght@0,400;1,300&display=swap");
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600:#d60000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "roboto", sans-serif;
+  font-weight: 300px;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+section{
+  scroll-margin: 70px;
+}
+ .gift-section{
+  scroll-margin: 100px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 52px;
+  color: white;
+}
+
+
+header {
+    background-color: var(--purple300);
+box-shadow: 5px 5px 5px rgba(1,1,1,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+
+}
+ nav .lap-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+nav li {
+  font-size: 30px;
+  transition: 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
+}
+
+ nav li:hover {
+  transition: 0.2s ease-in-out;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.hero-section{
+    background-image: url(./images/Frame\ 1.png);
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+    
+}
+.hero-section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.hero-section h1{
+    font-size: 96px;
+}
+
+.hero-section h3{
+    font-size: 24px;
+}
+.music-section{
+    padding-top: 50px;
+    background: var(--purple500);
+}
+.music-section .container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 30px;
+color: white;
+
+}
+.ipone-ipad-img{
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+
+}
+button{
+   
+    padding: 10px 15px;
+  border: none;
+   transition: 0.2s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+
+}
+.prm-button{
+background-color: var(--red600);
+color:wheat;
+}
+.scn-button{
+    background-color: var(--purple300);
+    color: white;
+    
+}
+  .scn-button ,.center{
+    align-self: center;
+}
+
+.about-music{
+  padding-top:500px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+
+
+}
+.hero-section ,  .video-section{
+   position: relative;
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+/* .video-section{
+    background-image: url(./images/Frame\ 4.png);
+    min-height: 800px;
+    display: grid;
+    place-items:center ;
+    text-align: center;
+  
+}*/
+/* .video-section .container{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    
+    gap: 30px;
+    margin-top: -220px;
+} */
+
+.gift-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 100px 0;
+}
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap:30px
+}
+.scn-button ,.start{
+   align-self: flex-start;
+}
+.footer-section-upr{
+    background: var(--purple500);
+
+}
+.footer-section-upr h3{
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    color: white;
+}
+.footer-section-upr .container{
+    padding:30px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section-upr ul{
+    color: white;
+    list-style: none;
+}
+.footer-section-lwr{
+    padding: 20px;
+    text-align: center;
+    background: var(--purple300);
+    color: white;
+}
+.menu-bar{
+  display: none;
+}
+.lap-menu{
+  display: block;
+}
+.mobile-menu{
+  display: none;
+  background-color: var(--purple500);
+}
+.mobile-menu ul{
+
+  font-size: 2rem;
+  text-align: center;
+padding: 1rem 0;
+  list-style: none;
+ 
+}
+.mobile-menu ul li:hover{
+  background-color: rgb(255, 139, 255);
+  color: var(--purple300);
+  transition: 0.s ease-in-out;
+
+}
+.mobile-menu  a:hover{
+  background-color: var(--purple300);
+  color: white;
+  transition: 0.s ease-in-out;
+}
+.show-menu{
+  display: block;
+}
+
+@media (max-width:768px){
+  .menu-bar{
+    display: block;
+  }
+   nav .lap-menu {
+    display: none;
+  }
+
+
+}
